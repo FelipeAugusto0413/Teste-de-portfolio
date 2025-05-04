@@ -6,52 +6,152 @@
     <meta name="viewport" content="width=], initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Meu portfolio</title>
 </head>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 <body>
+    <!--Coisas sobre mim-->
     <header class="container text-center">
 
-
-
-        <img src="img/foto_avatar_perfil.png" class="rounded-circle" width="200" height="200" alt="avatar do Felipe" srcset="">
+        <img src="img/foto_avatar_perfil.png" class="rounded-circle pt-2" width="200" height="200" alt="avatar do Felipe"
+            srcset="">
         <p class="lead nome-configura">Eu sou Felipe</p>
         <h1>Eu estudo programação</h1>
 
-        <p>
-            Sou estudante e estou aprendendo programação front-end.
-            Meu objetivo é criar jogos 2D para pessoas se divertirem
+        <p>Sou um estudante e estou aprendendo programação front-end. Meu objetivo é criar jogos 2D para pessoas se
+            divertirem
         </p>
 
         <p>Minhas habilidades:</p>
         <div>
-        <p class="badge rounded-pill text-bg-secondary">GameMaker Studio 2</p>
-        <p class="badge rounded-pill text-bg-secondary">Visualg30</p>
-        <p class="badge rounded-pill text-bg-secondary">p5.js</p>
+            <p class="badge rounded-pill text-bg-secondary">GameMaker Studio 2</p>
+            <p class="badge rounded-pill text-bg-secondary">Visualg30</p>
+            <p class="badge rounded-pill text-bg-secondary">p5.js</p>
         </div>
     </header>
 
-    <main class="container text-center">
+    <!--Projetos-->
+    <main class="container">
         <h2>Meus projetos:</h2>
-        <div class="row">
-            <div class="col">
+        <div class="row text-center">
+
+            <!--Projeto 1-->
+            <div class="col-md-4"> 
                 <div class="card" style="width: 18rem;">
-                    <img src="img/projeto_1.png" class="card-img-top" alt="porjeto 1" srcset="">
-                    <h5 class="card-text">Pagina sobre OP</h5>
-                    <a href="https://felipeaugusto0413.github.io/OrdemChannel/" class="btn btn-primary">Ver projeto</a>
+                    <img src="img/projeto_1.png" class="card-img-top" alt="projeto 1" srcset="">
+
+                    <h5 class="card-title">Pagina sobre OP</h5>
+                    <p class="card-text center-text">Um pequeno web site que fiz listando algumas temporadas de ordem paranormal e um vídeo muito bom.</p>
+                    <button type="button" class="btn btn-link btn-secondary" data-bs-toggle="modal" data-bs-target="#modal1">Ver projeto</button>
                 </div>
-
-
             </div>
 
+            <!--Projeto 2-->
+            <div class="col-md-4">  
+                <div class="card" style="width: 18rem;">
+                    <img src="img/projeto_2.png" class="card-img-top" alt="projeto 2" srcset="">
+
+                    <h5 class="card-title">Aventura de OP</h5>
+                    <p class="card-text">Uma aventura point and click que fiz com alguns elementos de ordem paranormal. Contem 2 finais e diferentes caminhos.</p>
+                    <button type="button" class="btn btn-link btn-secondary"data-bs-toggle="modal" data-bs-target="#modal2">Ver projeto</button>
+                </div>
+            </div>
+
+             <!--Projeto 3-->
+            <div class="col-md-4">    
+                <div class="card" style="width: 18rem;">
+                    <img src="img/projeto_3.png" class="card-img-top" alt="projeto 3" srcset="">
+
+                    <h5 class="card-title">Jogo simples de corrida</h5>
+                    <p class="card-text center-text">Um jogo feito no p5.js para 4 pessoas jogarem no mesmo teclado. primeiro que cruzar a linha de chegada vence.</p>
+                    <button type="button" class="btn btn-link btn-secondary"data-bs-toggle="modal" data-bs-target="#modal3">Ver projeto</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Modal1 -->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">OrdemChannel</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/projeto_1.png" class="img-fluid" alt="projeto 1" srcset="">
+                <p>Este site (OrdemChannel) tem todas as temporadas da história principal de ordem paranromal mais o spinoff.</p>
+                <p>No topo do site tem um vídeo do youtuber Spot sobre a primeira temporada do RPG de mesa. é um video muito bom que vale a pena ver.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="https://felipeaugusto0413.github.io/OrdemChannel/">Entrar no site</a>
+                <a href="https://github.com/FelipeAugusto0413/OrdemChannel">Pagina do GitHub</a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Modal2 -->
+    <div class="modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Aventura das relíquias</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/projeto_2.png" class="img-fluid" alt="projeto 1" srcset="">
+                <p>Esse é um jogo bem simples que criei, com bastante coisas de ordem paranormal (como imagens e personagens).</p>
+                <p>Você joga na pele de Arnaldo Fritz, que esta em busca das relíquias da calamidade. Mas para isso, ele deverá
+                superar diversos desafios em seu caminho.</p>
+                <p>Utilize o mouse para jogar e clique nos botões para avançar a história</p>
+            </div>
+            <div class="modal-footer">
+                <a href="https://felipeaugusto0413.github.io/Aventura-das-Reliquias/">Entrar no site</a>
+                <a href="https://github.com/FelipeAugusto0413/Aventura-das-Reliquias">Pagina do GitHub</a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Modal3 -->
+    <div class="modal" id="modal3" tabindex="-1">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Jogo de corrida</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/projeto_3.png" class="img-fluid" alt="projeto 1" srcset="">
+                <p>Um jogo feito no p5.js. Você pode jogar com até 4 pessoas, O primeiro que cruzar a linha de chegada vence.</p>
+                <p>Cada jogador usa uma tecla do teclado, sendo elas: A, S, J, K.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="https://editor.p5js.org/00001111140832sp/sketches/UpFpkP4_t">Entrar no site</a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <footer class="container pt-5">
+
+        <h2>Entre em contato</h2>
+        <div>
+            <i class="bi bi-github"></i>
+            <a href="https://github.com/FelipeAugusto0413">GitHub</a>
+            <p class="py-5 text-center">© copyright 2025. Produzido por Felipe Augusto</p>
 
         </div>
 
-
-
-    </main>
+    </footer>
 </body>
 
 </html>
