@@ -1,5 +1,27 @@
+:root {
+    --cor-principal: rgb(120, 120, 120);
+    --cor-secundaria: rgb(53, 53, 53);
+    --cor-destaque: rgb(84, 156, 197);
+}
 
+body {
+    font-family: 'sansation', sans-serif;
+    color: var(--cor-principal)
+}
 
-.nome-configura{
-    color:rgb(187, 67, 187);
+h1, h2, h5 {
+    color: var(--cor-secundaria);
+}
+
+footer a {
+    color: var(--cor-principal);
+}
+
+a:hover {
+    color: var(--cor-destaque);
+}
+
+.lead {
+    color: var(--cor-destaque);
+    font-weight: 500;
 }
